@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/navBarMobile.css">
 </head>
-<body>
+<body id="home">
 
     <div class="header">
         <figure id="logoMobile">
@@ -21,18 +21,22 @@
             <img src="../assets/shared/icon-hamburger.svg" alt="Menu">
         </figure>
 
-        <nav>
+        <nav id="navBar">
             <ul id="navLink">
-                <a href="">
+                <figure id="closeHamburguer">
+                    <img src="./assets/shared/icon-close.svg" alt="">
+                </figure>
+                
+                <a class="active-page" href="#">
                     <li><strong>00</strong> HOME</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li><strong>01</strong> DESTINATION</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li><strong>02</strong> CREW</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li><strong>03</strong> TECHNOLOGY</li>
                 </a>
             </ul>
@@ -53,5 +57,6 @@
         </div>
     </div>
 
+    <script src="./script/script.js"></script>
 </body>
 </html>
