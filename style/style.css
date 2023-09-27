@@ -56,7 +56,7 @@ h5 {
 
 
 body#home {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(../assets/home/background-home-mobile.jpg);
     background-size: cover;
@@ -96,9 +96,10 @@ body#home {
         cursor: pointer;
     }
 
-    .header nav {
+    .header nav#navBar {
         display: flex;
         position: absolute;
+        opacity: 0;
         top: 0;
         right: -254px;
         width: 254px;
@@ -109,11 +110,13 @@ body#home {
     }
 
     .showNav {
+        display: flex!important;
+        opacity: 1!important;
         right: 0!important;
     }
 
         .header ul#navLink{
-            font-family: 'BarlowCondensed-Regular';
+            font-family: var(--barlow);
             font-size: 16px;
             list-style: none;
             width: 100%;
